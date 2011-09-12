@@ -15,4 +15,5 @@ This is a series of exercise for working with files in Ruby.
  1. `exercise-006.rb`: This writes the output to a file.
  1. `exercise-007.rb`: Refactor and reuse, part 1: functions.
  1. `exercise-008.rb`: Refactor and reuse, part 2: classes.
+ 1. `exercise-009.rb`: Type/token ratio.
 
