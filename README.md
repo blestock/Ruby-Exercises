@@ -8,4 +8,6 @@ This is a series of exercise for working with files in Ruby.
  1. `exercise-001.rb`: This prints each word in a file on a separate line.
  1. `exercise-002.rb`: This normalizes each word so that it's easier to work
     with.
+ 1. `exercise-003.rb`: This counts how often each word occurs in the text and
+    prints those frequencies out.
 
