@@ -11,4 +11,5 @@ This is a series of exercise for working with files in Ruby.
  1. `exercise-003.rb`: This counts how often each word occurs in the text and
     prints those frequencies out.
  1. `exercise-004.rb`: This cleans up a small issue in the tokenization.
+ 1. `exercise-005.rb`: This sorts the frequency output.
 
