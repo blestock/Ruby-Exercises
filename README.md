@@ -5,4 +5,5 @@ This is a series of exercise for working with files in Ruby.
 
  1. `exercise-000.rb`: This reads a file by lines and writes it out to the
     screen.
+ 1. `exercise-001.rb`: This prints each word in a file on a separate line.
 
