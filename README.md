@@ -12,4 +12,5 @@ This is a series of exercise for working with files in Ruby.
     prints those frequencies out.
  1. `exercise-004.rb`: This cleans up a small issue in the tokenization.
  1. `exercise-005.rb`: This sorts the frequency output.
+ 1. `exercise-006.rb`: This writes the output to a file.
 
