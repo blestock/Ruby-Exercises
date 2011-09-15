@@ -6,13 +6,13 @@
 # change the name later.
 INPUT = 'jabberwocky.txt'
 
-# Now, open the file. This executes the block (do |f| ... end), with 'f'
-# assigned to the File object. When the block is done, the file is
+# Now, open the file. This executes the block (do |input_file| ... end), with
+# 'input_file' assigned to the File object. When the block is done, the file is
 # automatically closed.
-File.open(INPUT) do |f|
+File.open(INPUT) do |input_file|
 
   # This executes the block (do |line| ... end) for every line in the file.
-  f.each do |line|
+  input_file.each do |line|
     putstr line
   end
 

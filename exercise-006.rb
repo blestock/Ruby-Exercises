@@ -6,11 +6,11 @@ INPUT = 'jabberwocky.txt'
 # at the results would get old. Let's write it out to a file.
 OUTPUT = 'jabberwocky-counts.txt'
 
-File.open(INPUT) do |f|
+File.open(INPUT) do |input_file|
 
   counts = Hash.new(0)
 
-  f.each do |line|
+  input_file.each do |line|
     line.split.each do |word|
       word = word.gsub(/\W/, '').downcase
       counts[word] += 1 unless word.empty?
@@ -22,15 +22,15 @@ File.open(INPUT) do |f|
   count_array.reverse!
 
   # First, open the OUTPUT file for writing ('w'). Because we're already using
-  # 'f' for the input file, we'll use 'fout'.
-  File.open(OUTPUT, 'w') do |fout|
+  # 'input_file' for the input file, we'll use 'output_file'.
+  File.open(OUTPUT, 'w') do |output_file|
     count_array.each do |pair|
       key, value = pair
 
-      # Now, instead of printing using puts, we write it to fout using the <<
-      # method. Notice that we have to add '\n' to the end of the string so
-      # everything we be on different lines.
-      fout << "'#{key}'\t#{value}\n"
+      # Now, instead of printing using puts, we write it to output_file using
+      # the << method. Notice that we have to add '\n' to the end of the string
+      # so everything we be on different lines.
+      output_file << "'#{key}'\t#{value}\n"
 
     end
 

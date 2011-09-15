@@ -2,9 +2,9 @@
 
 INPUT = 'jabberwocky.txt'
 
-File.open(INPUT) do |f|
+File.open(INPUT) do |input_file|
 
-  f.each do |line|
+  input_file.each do |line|
     counts = Hash.new(0)
     line.split.each do |word|
       word = word.gsub(/\W/, '').downcase

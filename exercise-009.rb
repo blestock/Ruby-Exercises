@@ -23,8 +23,8 @@ class TextProcessor
   def read_tokens
     @tokens = []
 
-    File.open(@filename) do |f|
-      f.each do |line|
+    File.open(@filename) do |input_file|
+      input_file.each do |line|
         line.split.each do |word|
           word = normalize(word)
           @tokens << word unless word.empty?
@@ -59,10 +59,10 @@ class TextProcessor
 
   # This will write the sorted array of frequencies to a file.
   def write_counts(output)
-    File.open(output, 'w') do |fout|
+    File.open(output, 'w') do |output_file|
       @count_array.each do |pair|
         key, value = pair
-        fout << "#{key}\t#{value}\n"
+        output_file << "#{key}\t#{value}\n"
       end
     end
   end
@@ -96,8 +96,8 @@ processor = TextProcessor.new(INPUT)
 processor.process(OUTPUT)
 
 # We can write the type/token ratio to the file by opening it to append.
-File.open(OUTPUT, 'a') do |fout|
-  fout << "Type/token ratio: #{processor.type_token_ratio}\n"
+File.open(OUTPUT, 'a') do |output_file|
+  output_file << "Type/token ratio: #{processor.type_token_ratio}\n"
 end
 puts "All done. The output is in #{OUTPUT}."
 

@@ -26,8 +26,8 @@ def read_tokens(filename)
   # here.
   tokens = []
 
-  File.open(filename) do |f|
-    f.each do |line|
+  File.open(filename) do |input_file|
+    input_file.each do |line|
       line.split.each do |word|
         word = normalize(word)
         tokens << word unless word.empty?
@@ -64,10 +64,10 @@ end
 
 # Finally, this will write the sorted array of frequencies to a file.
 def write_counts(output, counts)
-  File.open(output, 'w') do |fout|
+  File.open(output, 'w') do |output_file|
     counts.each do |pair|
       key, value = pair
-      fout << "#{key}\t#{value}\n"
+      output_file << "#{key}\t#{value}\n"
     end
   end
 end

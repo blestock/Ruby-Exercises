@@ -2,9 +2,9 @@
 
 INPUT = 'jabberwocky.txt'
 
-File.new(INPUT) do |f|
+File.new(INPUT) do |input_file|
 
-  f.each do |line|
+  input_file.each do |line|
 
     line.split.each do |word|
 

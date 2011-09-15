@@ -2,7 +2,7 @@
 
 INPUT = 'jabberwocky.txt'
 
-File.open(INPUT) do |f|
+File.open(INPUT) do |input_file|
 
   # A Hash is a table mapping keys to values. Think of it like a dictionary.
   # If you know that word, you can look up information about it. (NB, neither
@@ -14,7 +14,7 @@ File.open(INPUT) do |f|
   counts = Hash.new(0)
 
 
-  f.each do |line|
+  input_file.each do |line|
     line.split.each do |word|
       # Last time, these were pretty strung out, and I used the destructive
       # versions (!) to show that they exist. Generally, you'll want to use the
