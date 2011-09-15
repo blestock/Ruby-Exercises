@@ -2,7 +2,7 @@
 
 INPUT = 'jabberwocky.txt'
 
-File.open(INPUT) do |f|
+File.open(INPUT) do |f_input|
 
   counts = Hash.new(0)
 

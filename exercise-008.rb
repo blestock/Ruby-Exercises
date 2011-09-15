@@ -97,7 +97,7 @@ end
 
 # Now we string everything together to get the work done.
 processor = TextProcessor.new(INPUT)
-processor.process(OUTPUT)
+processor.process()
 
 puts "All done. The output is in #{OUTPUT}."
 

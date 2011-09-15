@@ -8,7 +8,7 @@ File.open(INPUT) do |f|
 
     # Last time, we printed everything. This time, we'll split each line on
     # spaces and print out the words, one on each line.
-    line.split.each do |word|
+    line.split do |word|
       puts word
     end
 

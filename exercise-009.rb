@@ -84,7 +84,7 @@ class TextProcessor
     types = Set.new(@tokens)
 
     # Now, we get the ratio.
-    types.size.to_f / @tokens.size.to_f
+    types.size / @tokens.size
 
   end
 

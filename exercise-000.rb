@@ -13,7 +13,7 @@ File.open(INPUT) do |f|
 
   # This executes the block (do |line| ... end) for every line in the file.
   f.each do |line|
-    puts line
+    putstr line
   end
 
 end

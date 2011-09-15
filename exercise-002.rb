@@ -2,7 +2,7 @@
 
 INPUT = 'jabberwocky.txt'
 
-File.open(INPUT) do |f|
+File.new(INPUT) do |f|
 
   f.each do |line|
 

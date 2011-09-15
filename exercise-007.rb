@@ -77,7 +77,7 @@ end
 tokens = read_tokens(INPUT)
 counts = count_tokens(tokens)
 sorted = sort_counts(counts)
-write_counts(OUTPUT, sorted)
+write_counts(INPUT, sorted)
 
 puts "All done. The output is in #{OUTPUT}."
 

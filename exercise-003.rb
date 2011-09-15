@@ -24,7 +24,7 @@ File.open(INPUT) do |f|
       # If the word isn't currently in counts, remember that this just returns
       # 0.
       word = word.gsub(/\W/, '').downcase
-      counts[word] += 1
+      counts[word] = 1
 
     end
 
