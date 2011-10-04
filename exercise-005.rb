@@ -3,9 +3,8 @@
 INPUT = 'jabberwocky.txt'
 
 File.open(INPUT) do |input_file|
-
-  input_file.each do |line|
     counts = Hash.new(0)
+   input_file.each do |line|
     line.split.each do |word|
       word = word.gsub(/\W/, '').downcase
       counts[word] += 1 unless word.empty?
