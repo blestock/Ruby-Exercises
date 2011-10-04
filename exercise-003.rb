@@ -40,7 +40,7 @@ File.open(INPUT) do |input_file|
       #}}}
 
       #{{{ 3. Now increment the frequency of word in the frequency hashtable.
-      counts[word] = 1
+      counts[word] += 1
       #}}}
 
     end
