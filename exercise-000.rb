@@ -29,7 +29,6 @@
 INPUT = 'jabberwocky.txt'
 #}}}
 
-#{{{ 2. Open the file and pass the file object to a block.
 # Now, open the file. This executes the block (do |input_file| ... end), with
 # 'input_file' assigned to the File object. When the block is done, the file is
 # automatically closed.
@@ -39,7 +38,7 @@ File.open(INPUT) do |input_file|
   #{{{ 3. Read each line from the file and print it to the screen.
   # This executes the block (do |line| ... end) for every line in the file.
   input_file.each do |line|
-    putstr line
+    puts line
   end
   #}}}
 
