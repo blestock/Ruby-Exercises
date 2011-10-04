@@ -17,7 +17,7 @@ File.open(INPUT) do |input_file|
     end
   end
 
-  count_array = counts
+  count_array = counts.to_a
   count_array.sort_by! { |pair| pair[1] }
   count_array.reverse!
 
